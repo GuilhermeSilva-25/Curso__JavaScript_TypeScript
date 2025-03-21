@@ -1,0 +1,15 @@
+const num = Number(prompt('Digite um número: '));
+const titulo = document.getElementById("numero-titulo");
+const raiz = document.getElementById("raiz-quadrada");
+const inteiro = document.getElementById("inteiro");
+const nan = document.getElementById("nan");
+const baixo = document.getElementById("baixo");
+const cima = document.getElementById("cima");
+const decimal = document.getElementById("decimal");
+titulo.innerHTML += ` ${num}`;
+raiz.innerHTML += `${Math.sqrt(num)}`;
+inteiro.innerHTML += `${num} é inteiro: ${Number.isInteger(num)}`;
+nan.innerHTML += `${Number.isNaN(num)}`;
+baixo.innerHTML += `${Math.floor(num)}`;
+cima.innerHTML += `${Math.ceil(num)}`;
+decimal.innerHTML += `${num.toFixed(2)}`;
